@@ -22,8 +22,14 @@
 
     <header class="site-header">
       <a href="#home" class="brand">
-        <span class="brand__pot">B</span>
-        <span class="brand__text">Biriyani Souq</span>
+        <img
+          class="brand__logo"
+          src="./assets/logo.png"
+          alt="Biriyani Souq logo"
+          width="170"
+          height="50"
+        />
+        <span class="brand__text sr-only">Biriyani Souq</span>
       </a>
       <button class="menu-toggle" aria-label="Toggle menu">Menu</button>
       <nav class="site-nav">
@@ -37,6 +43,7 @@
 
     <main>
       <section id="home" class="hero">
+        <div class="hero__bg-image" aria-hidden="true"></div>
         <div class="hero__overlay"></div>
         <div class="hero__content reveal">
           <p class="eyebrow">Serving Since 2020</p>
@@ -49,6 +56,13 @@
             <a href="#signature" class="btn btn--gold">Explore Menu</a>
             <a href="#locations" class="btn btn--ghost">Find a Branch</a>
           </div>
+        </div>
+        <div class="hero__split-text" aria-hidden="true">
+          <p class="hero__split-line hero__split-line--top" data-text="Biriyani Souq"></p>
+          <p
+            class="hero__split-line hero__split-line--bottom"
+            data-text="Authentic taste of kozhikode"
+          ></p>
         </div>
       </section>
 
@@ -71,18 +85,42 @@
         </div>
         <div class="signature__grid">
           <article class="dish-card reveal">
+            <img
+              class="dish-card__img"
+              src="./assets/dish-2-fixed.png"
+              alt="Kozhikode Chicken Dum Biriyani"
+              loading="lazy"
+            />
             <h3>Kozhikode Chicken Dum Biriyani</h3>
             <p>Fragrant jeerakasala rice with spiced chicken and fried onion.</p>
           </article>
           <article class="dish-card reveal">
+            <img
+              class="dish-card__img"
+              src="./assets/dish-3.png"
+              alt="Mutton Royal Biriyani"
+              loading="lazy"
+            />
             <h3>Mutton Royal Biriyani</h3>
             <p>Slow-cooked mutton layered with saffron notes and ghee roast.</p>
           </article>
           <article class="dish-card reveal">
+            <img
+              class="dish-card__img"
+              src="./assets/dish-2-fixed.png"
+              alt="Beef Roast and Kuzhimandi Rice"
+              loading="lazy"
+            />
             <h3>Beef Roast + Kuzhimandi Rice</h3>
             <p>Smoky and bold with house-special masala blend.</p>
           </article>
           <article class="dish-card reveal">
+            <img
+              class="dish-card__img"
+              src="./assets/dish-3.png"
+              alt="Al Faham Combo Platter"
+              loading="lazy"
+            />
             <h3>Al Faham Combo Platter</h3>
             <p>Chargrilled chicken with creamy dip and biriyani pairing.</p>
           </article>
@@ -125,7 +163,7 @@
         </div>
         <div class="locations__grid">
           <article class="location-card reveal">
-            <h3>Biriyani Souq Branch 1</h3>
+            <h3>South Kalamassery</h3>
             <p>Tap below to open Google Maps location details.</p>
             <a
               class="btn btn--gold btn--small"
@@ -136,7 +174,7 @@
             >
           </article>
           <article class="location-card reveal">
-            <h3>Biriyani Souq Branch 2</h3>
+            <h3>Kakkanad</h3>
             <p>Tap below to open Google Maps location details.</p>
             <a
               class="btn btn--gold btn--small"
@@ -147,7 +185,7 @@
             >
           </article>
           <article class="location-card reveal">
-            <h3>Biriyani Souq Branch 3</h3>
+            <h3>University Road</h3>
             <p>Tap below to open Google Maps location details.</p>
             <a
               class="btn btn--gold btn--small"
@@ -158,7 +196,7 @@
             >
           </article>
           <article class="location-card reveal">
-            <h3>Biriyani Souq Branch 4</h3>
+            <h3>South Kalamassery</h3>
             <p>Tap below to open Google Maps location details.</p>
             <a
               class="btn btn--gold btn--small"
